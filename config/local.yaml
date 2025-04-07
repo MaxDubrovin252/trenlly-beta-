@@ -1,0 +1,10 @@
+port : "9000"
+env : "local"
+
+
+db:
+  port : "5439"
+  host : "localhost"
+  username : "postgres"
+  sslmode : "disable"
+  dbname : "postgres"
