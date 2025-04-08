@@ -14,6 +14,7 @@ func (h *Handler) CreateTren(c *gin.Context) {
 
 	if err != nil {
 		c.JSON(400, gin.H{"error": err.Error()})
+		return
 	}
 	var req trenlly.Trening
 

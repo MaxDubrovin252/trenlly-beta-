@@ -49,7 +49,7 @@ func (h *Handler) SignIn(c *gin.Context) {
 	}
 	logrus.Info("user war authorize")
 	logrus.Info(slog.String("username", req.Username))
-	c.JSON(200, map[string]interface{}{
+	c.JSON(200, gin.H{
 		"token": token,
 	})
 }
