@@ -28,6 +28,7 @@ func (h *Handler) UserIdentity(c *gin.Context) {
 
 	if len(headerParts) != 2 {
 		c.JSON(http.StatusUnauthorized, gin.H{"auth": "invalid auth header"})
+		return
 	}
 
 	userId, err := h.services.ParseToken(headerParts[1])
