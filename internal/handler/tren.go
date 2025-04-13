@@ -120,11 +120,6 @@ func (h *Handler) UpdateTren(c *gin.Context) {
 		return
 	}
 
-	if err != nil {
-		c.JSON(400, gin.H{"error": err.Error()})
-		return
-	}
-
 	logrus.Info("user was updated tren")
 	logrus.Info(slog.Int("userId", userId))
 	logrus.Info("trenId", trenId)
