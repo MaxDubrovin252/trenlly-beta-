@@ -1,10 +1,10 @@
-port : "9000"
+port : 8070
 env : "local"
 
 
 db:
-  port : "5439"
-  host : "localhost"
+  port : 5432
+  host : "db"
   username : "postgres"
   sslmode : "disable"
   dbname : "postgres"
